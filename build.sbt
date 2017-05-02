@@ -4,14 +4,15 @@ organization := "com.slidingautonomy.sbt"
 
 name := "sbt-imagemin"
 
-version := "1.0.1"
+version := "1.1.0"
 
 scalaVersion := "2.10.4"
 
 scalacOptions += "-feature"
 
 libraryDependencies ++= Seq(
-  "org.webjars" % "mkdirp" % "0.3.5"
+  "org.webjars" % "mkdirp" % "0.5.0",
+  "org.webjars" % "es6-promise-node" % "2.1.1"
 )
 
 resolvers ++= Seq(
@@ -22,7 +23,7 @@ resolvers ++= Seq(
   Resolver.mavenLocal
 )
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-js-engine" % "1.0.1")
+addSbtPlugin("com.typesafe.sbt" % "sbt-js-engine" % "1.1.4")
 
 scriptedSettings
 

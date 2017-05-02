@@ -1,3 +1,5 @@
 jdk: openjdk7
 language: scala
-script: sbt scripted
+script: sbt scripted -Dsbt.jse.engineType=Node
+before_install:
+  - nvm install 6
